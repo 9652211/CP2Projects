@@ -10,4 +10,7 @@ public class Cuboid {
     public double getVolume() {
         return length*width*height;
     }
+    public double getSurfaceArea() {
+        return 2*length*width+2*width*height+2*height*length;
+    }
 }
