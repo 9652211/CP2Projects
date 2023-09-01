@@ -13,7 +13,7 @@ public class Prism {
         return length*width*height/2;
     }
     public double getSurfaceArea() {
-
-        return length*width+2*length*Math.sqrt(Math.pow(width/2, 2)+Math.pow(height, 2))+width*height;
+        double edge = Math.sqrt(Math.pow(width/2, 2)+Math.pow(height, 2));
+        return length*width+2*length*edge+width*height;
     }
 }
