@@ -83,7 +83,7 @@ public class shapetester {
             } else {
                 System.out.println("That wasn't a 1 or a 2");
                 System.out.println("Our universe may be finite.");
-                System.out.println("While the typical example of a 3-d finite unbounded manifold is a 3-sphere (with constant positive curvature throughout), ")
+                System.out.println("While the typical example of a 3-d finite unbounded manifold is a 3-sphere (with constant positive curvature throughout), ");
                 System.out.println("It turns out that our universe may be finite even if it is flat (uncurved) after all.");
                 System.out.println("The simplest example of a finite and unbounded yet flat 3-d surface is ... (drumroll please) ... ");
                 System.out.println("A 3-torus!");
