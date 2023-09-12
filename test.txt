@@ -1,0 +1,23 @@
+SET repeat to false
+SET maxTries to 6
+WHILE repeat = true
+  SET tries to 1
+  SET word to wordlist.choose
+  PRINT “press a number to play”
+  WHILE tries <= maxTries
+  	PRINT “guess a five letter word”
+    SET guess to (GET next string)
+    Match.setWords(guess, wordlist.choose)
+    PRINT Match.c1
+    PRINT Match.c2
+    PRINT Match.c3
+    PRINT Match.c4
+    PRINT Match.c5
+    INCREMENT tries
+  END WHILE
+  PRINT “do you want to play again? Press 1”
+  SET outcome to (GET next string)
+  IF outcome = 1 THEN
+  		SET repeat to true
+  END IF
+END WHILE
