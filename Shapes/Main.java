@@ -1,8 +1,10 @@
 
 public class Main {
-	Triangle tri = new Triangle();
-	tri.setA(1);
-	tri.setB(1);
-	tri.setC(1);
-	System.out.println(tri.area());
+	public static void main(String args[]) {
+		Triangle tri = new Triangle();
+		tri.setA(13);
+		tri.setB(14);
+		tri.setC(15);
+		System.out.println(tri.area());
+	}
 }

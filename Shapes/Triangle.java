@@ -16,6 +16,6 @@ public class Triangle implements Shape {
 	@Override
 	public double area() {
 		double s = (a+b+c)/2;
-		return Math.pow(s*(s-a)*(s-b)*(s-c), 1/2);
+		return Math.pow(s*(s-a)*(s-b)*(s-c), 0.5);
 	}
 }
