@@ -1,5 +1,5 @@
 
-public class Rook implements Pieces{
+public class King implements Pieces {
 	private int x;
 	private int y;
 	public void setX(int x) {
@@ -11,7 +11,7 @@ public class Rook implements Pieces{
 	
 	@Override
 	public boolean checkMove(int checkX, int checkY) {
-		if (!((checkX==x)&&(checkY==y)) && checkX>0 && checkX<9 && checkY>0 && checkY<9 && ((checkX==x)||(checkY==y))) {
+		if (!((checkX==x)&&(checkY==y)) && checkX>0 && checkX<9 && checkY>0 && checkY<9 && (Math.abs(checkX-x)<=1 && Math.abs(checkY-y)<=1)) {
 			return true;
 		} else {
 			return false;
