@@ -18,4 +18,12 @@ public class Bishop implements Pieces {
 		}
 		
 	}
+	
+	@Override
+	public void move(int checkX, int checkY) {
+		if(checkMove(checkX, checkY)) {
+			x = checkX;
+			y = checkY;
+		}
+	}
 }

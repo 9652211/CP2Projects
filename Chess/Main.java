@@ -6,10 +6,12 @@ public class Main {
 		bishop.setX(3);
 		bishop.setY(1);
 		System.out.println(bishop.checkMove(5, 5));
+		bishop.move(5, 5);
 		Queen queen = new Queen();
 		queen.setX(4);
 		queen.setY(1);
 		System.out.println(queen.checkMove(5, 5));
+		queen.move(5, 5);
 		Rook rook = new Rook();
 		rook.setX(1);
 		rook.setY(1);

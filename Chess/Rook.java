@@ -15,7 +15,14 @@ public class Rook implements Pieces{
 			return true;
 		} else {
 			return false;
+		}	
+	}
+	
+	@Override
+	public void move(int checkX, int checkY) {
+		if(checkMove(checkX, checkY)) {
+			x = checkX;
+			y = checkY;
 		}
-		
 	}
 }

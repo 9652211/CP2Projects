@@ -16,6 +16,13 @@ public class Pawn implements Pieces {
 		} else {
 			return false;
 		}
-		
+	}
+	
+	@Override
+	public void move(int checkX, int checkY) {
+		if(checkMove(checkX, checkY)) {
+			x = checkX;
+			y = checkY;
+		}
 	}
 }
