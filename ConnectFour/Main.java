@@ -43,14 +43,22 @@ public class Main {
 		return false;
 	}
 	
-	private boolean checkDiagonals() {
+	private boolean checkDiagonals(char[][] board) {
 		
-		for (int i = 0; i < ROWS; i++) {
-			for (int j = 0; j < COLS; j++) {
+		for (int i = 0; i < ROWS-3; i++) {
+			for (int j = 0; j < COLS-3; j++) {
 				if(board[ROWS][COLS]!=EMPTY) {
 					if(board[ROWS][COLS] == board[ROWS+1][COLS+1] && board[ROWS][COLS] == board[ROWS+2][COLS+2] && board[ROWS][COLS] == board[ROWS+3][COLS+3]) {
 						return true;
-					} else if (board[ROWS][COLS] == board[ROWS+1][COLS-1] && board[ROWS][COLS] == board[ROWS+2][COLS-2] && board[ROWS][COLS] == board[ROWS+3][COLS-3]) {
+					}
+				}
+			}
+		}
+		
+		for (int i = 0; i < ROWS-3; i++) {
+			for (int j = 3; j < COLS; j++) {
+				if(board[ROWS][COLS]!=EMPTY) {
+					if (board[ROWS][COLS] == board[ROWS+1][COLS-1] && board[ROWS][COLS] == board[ROWS+2][COLS-2] && board[ROWS][COLS] == board[ROWS+3][COLS-3]) {
 						return true;
 					}
 				}
@@ -84,7 +92,6 @@ public class Main {
 			// What does this line do?
 			currentPlayer = (currentPlayer == 1) ? 2 : 1;
 		}
-		
 		scanner.close();
 	}
 	
